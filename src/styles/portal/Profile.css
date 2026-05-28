@@ -1,0 +1,270 @@
+.portal-profile-page{
+  width:100%;
+}
+
+/* header */
+
+.portal-profile-header{
+  margin-bottom:25px;
+}
+
+.portal-profile-header h2{
+
+  margin:0;
+
+  font-size:30px;
+
+  font-weight:700;
+
+  color:#0f172a;
+}
+
+.portal-profile-header p{
+
+  margin-top:6px;
+
+  color:#64748b;
+}
+
+/* wrapper */
+
+.portal-profile-wrapper{
+
+  display:grid;
+
+  grid-template-columns:
+      320px 1fr;
+
+  gap:25px;
+}
+
+/* left */
+
+.portal-profile-left{
+
+  background:white;
+
+  border-radius:22px;
+
+  padding:30px 25px;
+
+  text-align:center;
+
+  box-shadow:
+      0 4px 14px rgba(0,0,0,.05);
+}
+
+.profile-image-box{
+
+  width:140px;
+  height:140px;
+
+  margin:auto;
+
+  position:relative;
+}
+
+.profile-big-icon{
+
+  width:100%;
+  height:100%;
+
+  color:#94a3b8;
+}
+
+/* change photo */
+
+.change-photo-btn{
+
+  position:absolute;
+
+  right:0;
+  bottom:0;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#2563eb;
+
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  font-size:16px;
+}
+
+.portal-profile-left h3{
+
+  margin-top:18px;
+
+  margin-bottom:8px;
+
+  color:#0f172a;
+
+  font-size:24px;
+}
+
+.portal-profile-left p{
+
+  color:#64748b;
+
+  margin:0;
+}
+
+/* right */
+
+.portal-profile-right{
+
+  background:white;
+
+  border-radius:22px;
+
+  padding:30px;
+
+  box-shadow:
+      0 4px 14px rgba(0,0,0,.05);
+}
+
+/* grid */
+
+.portal-profile-grid{
+
+  display:grid;
+
+  grid-template-columns:
+      repeat(2,1fr);
+
+  gap:22px;
+}
+
+/* input */
+
+.portal-input-group{
+
+  display:flex;
+  flex-direction:column;
+}
+
+.portal-input-group label{
+
+  margin-bottom:10px;
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  color:#334155;
+
+  font-size:14px;
+
+  font-weight:600;
+}
+
+.portal-input-group input{
+
+  height:50px;
+
+  border:1px solid #dbe2ea;
+
+  border-radius:12px;
+
+  padding:0 15px;
+
+  font-size:14px;
+
+  outline:none;
+
+  transition:.3s;
+}
+
+.portal-input-group input:focus{
+
+  border-color:#2563eb;
+}
+
+/* full width */
+
+.full-width{
+
+  grid-column:span 2;
+}
+
+/* save button */
+
+.portal-save-profile-btn{
+
+  margin-top:28px;
+
+  border:none;
+
+  background:#2563eb;
+
+  color:white;
+
+  height:50px;
+
+  padding:0 24px;
+
+  border-radius:12px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  font-size:15px;
+
+  transition:.3s;
+}
+
+.portal-save-profile-btn:hover{
+
+  background:#1d4ed8;
+}
+
+/* responsive */
+
+@media(max-width:992px){
+
+  .portal-profile-wrapper{
+
+    grid-template-columns:1fr;
+  }
+
+  .portal-profile-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .full-width{
+
+    grid-column:span 1;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .portal-profile-header h2{
+    font-size:24px;
+  }
+
+  .portal-profile-right{
+    padding:22px;
+  }
+
+}

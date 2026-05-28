@@ -1,0 +1,194 @@
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #081426 0%,
+    #0b1f38 100%
+  );
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all .3s ease;
+
+  /* ADD THESE */
+
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* collapse */
+
+.sidebar.collapsed {
+  width: 85px;
+  min-width: 85px;
+}
+
+/* logo */
+
+.sidebar-logo {
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.logo-icon {
+  font-size: 36px;
+  color: #FDB813;
+}
+
+.logo-text h4 {
+  margin: 0;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #FDB813;
+
+  letter-spacing: 1px;
+}
+
+.logo-text span {
+  font-size: 12px;
+
+  color: #ffffffcc;
+
+  letter-spacing: 1px;
+}
+
+/* menu */
+
+.sidebar-menu {
+  flex: 1;
+
+  padding: 15px 12px;
+
+  overflow-y: auto;
+}
+
+.menu-item {
+
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 0 16px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  margin-bottom: 8px;
+
+  transition: .25s;
+}
+
+.menu-item:hover {
+
+  background: rgba(255,255,255,.08);
+
+  transform: translateX(3px);
+}
+
+.menu-item.active {
+
+  background: #123865;
+
+  box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.05);
+}
+
+.menu-icon {
+
+  font-size: 18px;
+
+  min-width: 20px;
+}
+
+.menu-title {
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* footer */
+
+.sidebar-footer {
+
+  height: 80px;
+
+  border-top: 1px solid rgba(255,255,255,.08);
+
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.user-avatar {
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #FDB813;
+
+  color: #081426;
+
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-name {
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.admin-email {
+
+  font-size: 11px;
+
+  color: rgba(255,255,255,.65);
+}
+
+/* scrollbar */
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.2);
+  border-radius: 20px;
+}
+
+.menu-item{
+  text-decoration:none;
+  color:white;
+}

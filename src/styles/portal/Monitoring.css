@@ -1,0 +1,334 @@
+.portal-monitoring-page{
+  width:100%;
+}
+
+/* header */
+
+.portal-monitoring-header{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:25px;
+}
+
+.portal-monitoring-header h2{
+
+  margin:0;
+
+  font-size:30px;
+
+  font-weight:700;
+
+  color:#0f172a;
+}
+
+.portal-monitoring-header p{
+
+  margin-top:6px;
+
+  color:#64748b;
+}
+
+/* refresh button */
+
+.refresh-btn{
+
+  border:none;
+
+  background:#2563eb;
+
+  color:white;
+
+  height:46px;
+
+  padding:0 18px;
+
+  border-radius:10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:10px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.refresh-btn:hover{
+
+  background:#1d4ed8;
+}
+
+/* summary cards */
+
+.monitoring-summary-grid{
+
+  display:grid;
+
+  grid-template-columns:
+      repeat(auto-fit,minmax(240px,1fr));
+
+  gap:20px;
+
+  margin-bottom:25px;
+}
+
+.monitoring-summary-card{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:24px;
+
+  display:flex;
+  align-items:center;
+
+  gap:18px;
+
+  box-shadow:
+      0 4px 14px rgba(0,0,0,.05);
+}
+
+.summary-icon{
+
+  width:68px;
+  height:68px;
+
+  border-radius:16px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+
+  color:white;
+}
+
+.yellow{
+  background:#f59e0b;
+}
+
+.green{
+  background:#16a34a;
+}
+
+.blue{
+  background:#2563eb;
+}
+
+.monitoring-summary-card h4{
+
+  margin:0;
+
+  color:#64748b;
+
+  font-size:15px;
+}
+
+.monitoring-summary-card h2{
+
+  margin-top:10px;
+
+  color:#0f172a;
+
+  font-size:30px;
+}
+
+/* plant grid */
+
+.monitoring-plants-grid{
+
+  display:grid;
+
+  grid-template-columns:
+      repeat(auto-fit,minmax(340px,1fr));
+
+  gap:20px;
+}
+
+/* card */
+
+.monitoring-plant-card{
+
+  background:white;
+
+  border-radius:20px;
+
+  padding:24px;
+
+  box-shadow:
+      0 4px 14px rgba(0,0,0,.05);
+
+  transition:.3s;
+}
+
+.monitoring-plant-card:hover{
+
+  transform:translateY(-4px);
+}
+
+/* top */
+
+.monitoring-card-top{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:18px;
+}
+
+.plant-monitor-icon{
+
+  width:68px;
+  height:68px;
+
+  border-radius:16px;
+
+  background:#fef3c7;
+
+  color:#d97706;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:30px;
+}
+
+/* status */
+
+.monitoring-status{
+
+  padding:6px 14px;
+
+  border-radius:30px;
+
+  font-size:12px;
+
+  font-weight:600;
+}
+
+.online{
+
+  background:#dcfce7;
+
+  color:#15803d;
+}
+
+.offline{
+
+  background:#fee2e2;
+
+  color:#dc2626;
+}
+
+/* title */
+
+.monitoring-plant-card h3{
+
+  margin-bottom:22px;
+
+  color:#0f172a;
+
+  font-size:22px;
+}
+
+/* details */
+
+.monitoring-details{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:16px;
+}
+
+.monitoring-detail-item{
+
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+
+  color:#475569;
+
+  font-size:15px;
+}
+
+.monitoring-detail-item strong{
+
+  margin-left:5px;
+
+  color:#0f172a;
+}
+
+/* progress */
+
+.generation-progress-wrapper{
+
+  margin-top:24px;
+}
+
+.generation-progress-label{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:10px;
+
+  font-size:14px;
+
+  color:#475569;
+}
+
+.generation-progress-bar{
+
+  width:100%;
+
+  height:10px;
+
+  border-radius:20px;
+
+  background:#e2e8f0;
+
+  overflow:hidden;
+}
+
+.generation-progress-fill{
+
+  width:78%;
+
+  height:100%;
+
+  background:#16a34a;
+
+  border-radius:20px;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+  .portal-monitoring-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:15px;
+  }
+
+  .portal-monitoring-header h2{
+    font-size:24px;
+  }
+
+}

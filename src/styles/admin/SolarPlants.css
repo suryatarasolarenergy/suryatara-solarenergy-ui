@@ -1,0 +1,486 @@
+.solarplants-page{
+
+  width:100%;
+}
+
+/* header */
+
+.solarplants-header{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:25px;
+}
+
+.solarplants-header h2{
+
+  margin:0;
+
+  font-size:30px;
+
+  font-weight:700;
+
+  color:#0f172a;
+}
+
+.solarplants-header p{
+
+  margin-top:5px;
+
+  color:#64748b;
+}
+
+/* button */
+
+.add-plant-btn{
+
+  border:none;
+
+  background:#f59e0b;
+
+  color:white;
+
+  padding:12px 18px;
+
+  border-radius:10px;
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.add-plant-btn:hover{
+
+  background:#d97706;
+}
+
+/* grid */
+
+.solarplants-grid{
+
+  display:grid;
+
+  grid-template-columns:
+      repeat(auto-fit,minmax(320px,1fr));
+
+  gap:20px;
+}
+
+/* card */
+
+.solarplant-card{
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:22px;
+
+  box-shadow:
+      0 4px 14px rgba(0,0,0,.05);
+
+  transition:.3s;
+}
+
+.solarplant-card:hover{
+
+  transform:translateY(-4px);
+}
+
+/* top */
+
+.solarplant-top{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:20px;
+}
+
+.solarplant-icon{
+
+  width:65px;
+  height:65px;
+
+  border-radius:15px;
+
+  background:#fef3c7;
+
+  color:#d97706;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:30px;
+}
+
+/* status */
+
+.plant-status{
+
+  padding:6px 14px;
+
+  border-radius:30px;
+
+  font-size:12px;
+
+  font-weight:600;
+}
+
+.active{
+
+  background:#dcfce7;
+
+  color:#15803d;
+}
+
+.maintenance{
+
+  background:#fef3c7;
+
+  color:#b45309;
+}
+
+.offline{
+
+  background:#fee2e2;
+
+  color:#dc2626;
+}
+
+/* content */
+
+.solarplant-card h3{
+
+  margin-bottom:18px;
+
+  color:#0f172a;
+
+  font-size:22px;
+}
+
+.solarplant-info{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:12px;
+}
+
+.solarplant-info p{
+
+  margin:0;
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  color:#475569;
+}
+
+/* footer */
+
+.solarplant-footer{
+
+  display:flex;
+
+  gap:12px;
+
+  margin-top:24px;
+}
+
+.solarplant-footer button{
+
+  flex:1;
+
+  height:42px;
+
+  border:none;
+
+  border-radius:10px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:8px;
+}
+
+.view-btn{
+
+  background:#dbeafe;
+
+  color:#1d4ed8;
+}
+
+.view-btn:hover{
+
+  background:#bfdbfe;
+}
+
+.edit-btn{
+
+  background:#fef3c7;
+
+  color:#b45309;
+}
+
+.edit-btn:hover{
+
+  background:#fde68a;
+}
+
+/* modal */
+
+.plant-modal-overlay{
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100vh;
+
+  background:rgba(0,0,0,.45);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:9999;
+}
+
+.plant-modal{
+
+  width:460px;
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  animation:popup .25s ease;
+}
+
+@keyframes popup{
+
+  from{
+    transform:scale(.8);
+    opacity:0;
+  }
+
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+/* header */
+
+.plant-modal-header{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  margin-bottom:20px;
+}
+
+.plant-modal-header h3{
+
+  margin:0;
+
+  color:#0f172a;
+}
+
+/* close */
+
+.close-modal-btn{
+
+  border:none;
+
+  background:#f1f5f9;
+
+  width:38px;
+  height:38px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-size:16px;
+}
+
+/* form */
+
+.plant-form{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:18px;
+}
+
+.form-group{
+
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group label{
+
+  margin-bottom:8px;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  color:#334155;
+}
+
+.form-group input,
+.form-group select{
+
+  height:45px;
+
+  border:1px solid #dbe2ea;
+
+  border-radius:10px;
+
+  padding:0 14px;
+
+  outline:none;
+
+  font-size:14px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+  border-color:#f59e0b;
+}
+
+/* buttons */
+
+.modal-buttons{
+
+  display:flex;
+
+  gap:12px;
+
+  margin-top:10px;
+}
+
+.cancel-btn,
+.save-btn{
+
+  flex:1;
+
+  height:45px;
+
+  border:none;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-weight:600;
+}
+
+.cancel-btn{
+
+  background:#f1f5f9;
+}
+
+.save-btn{
+
+  background:#f59e0b;
+
+  color:white;
+}
+
+.save-btn:hover{
+
+  background:#d97706;
+}
+
+/* view */
+
+.view-plant-content{
+
+  display:flex;
+  flex-direction:column;
+
+  gap:18px;
+}
+
+.view-item{
+
+  background:#f8fafc;
+
+  padding:14px;
+
+  border-radius:12px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:6px;
+}
+
+.view-item span{
+
+  font-size:13px;
+
+  color:#64748b;
+}
+
+.view-item strong{
+
+  color:#0f172a;
+
+  font-size:15px;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+  .solarplants-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:15px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .plant-modal{
+
+    width:95%;
+  }
+
+}
